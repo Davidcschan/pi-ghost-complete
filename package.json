@@ -1,0 +1,48 @@
+{
+  "name": "pi-ghost-complete",
+  "version": "0.2.0",
+  "description": "Inline ghost-text completions and next-prompt suggestions for the pi coding agent — zero-dependency TypeScript, cost-aware request triggers, zero-layout-shift rendering. Fork of pi-ghost-text.",
+  "license": "MIT",
+  "author": "DavidChan",
+  "contributors": [
+    "Chris Vaughan (pi-ghost-text, original author)"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidcschan/pi-ghost-complete.git"
+  },
+  "homepage": "https://github.com/Davidcschan/pi-ghost-complete#readme",
+  "bugs": {
+    "url": "https://github.com/Davidcschan/pi-ghost-complete/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "pi-extension",
+    "autocomplete",
+    "ghost-text",
+    "prompt-suggestions",
+    "inline-completion"
+  ],
+  "files": [
+    "src"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
